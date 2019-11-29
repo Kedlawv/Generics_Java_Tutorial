@@ -4,7 +4,7 @@ package kedlaw.generics;
 
 import java.util.*;
 
-public class Main {
+public class WildCardsMain {
     public static void main(String[] args) {
 
         // before Generics
