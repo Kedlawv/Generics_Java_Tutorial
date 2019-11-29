@@ -8,9 +8,10 @@ public class WildCardsMain {
     public static void main(String[] args) {
 
         // before Generics
-        List myList = new LinkedList();
+        List myList = new LinkedList();  // raw type same as List<?> not List<Object>
         myList.add(new Integer(0));
-        System.out.println(myList.iterator().next().getClass()); // Whaaaaat ? Expected an Object
+        System.out.println(myList.iterator().next().getClass()); // Whaaaaat ? Expected an Object...
+        //... List myList is not List<Object> its List<?> that is why we get Integer back
 
         Integer x = (Integer) myList.iterator().next();
         System.out.println(x.getClass());
